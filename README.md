@@ -27,7 +27,7 @@ pyinstaller --onefile --name passaid cli.py
 passaid ...
 ```
 
-## Turorial
+## Tutorial
 
 ### Basic
 
