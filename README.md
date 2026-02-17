@@ -4,7 +4,7 @@ A command-line password manager for personal offline use.
 
 ## Quick start
 
-### Install from releases
+### Clone the repository
 
 ```bash
 git clone https://github.com/licphel/pass-aid.git
@@ -12,10 +12,19 @@ cd pass-aid
 pip install -e .
 ```
 
-### Install 
+### Launch
 
 ```bash
 python cli.py [command]
+```
+
+Or packed with pyinstaller and add to env variables:
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --name passaid cli.py
+# (After setting env variables)
+passaid ...
 ```
 
 ## Turorial
@@ -110,13 +119,4 @@ By default the database is at:
 You can also specify another path. The database will be automatically created once used.
 ```bash
 passaid -d "D:/mydb.db" add ...
-```
-
-## Packing and distributing
-
-Simply use pyinstaller to pack cli.py.
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --name passaid cli.py
 ```
