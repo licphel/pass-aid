@@ -110,7 +110,6 @@ def clear():
 
 def printinfo():
     acptw("database at: ", DB_PATH)
-    acptw("database cryto: false")
 
 def printver():
     acptw("pass-aid 1.0")
